@@ -16,18 +16,18 @@ class AlbumsListView extends StatelessWidget {
         itemCount: info.length,
         itemBuilder: (BuildContext context, int index) {
           return Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 4),
             child: Container(
               child: Column(
                 children: [
                   Image.asset(
                     // todo
                     info[index].image,
-                    width: 119,
-                    height: 140,
+                    width: 130,
+                    height: 100,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 15,
                   ),
                   Text(
                     // todo

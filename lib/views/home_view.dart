@@ -91,11 +91,6 @@ class HomeView extends StatelessWidget {
           // todo ___________________________
           AlbumsListView(),
           // todo _________________________
-
-          SizedBox(
-            height: 15,
-          ),
-          // todo ______________________
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Row(
@@ -122,9 +117,10 @@ class HomeView extends StatelessWidget {
               ],
             ),
           ),
+
           // todo ___________________________
           SizedBox(
-            height: 31,
+            height: 10,
           ),
           // todo __________________
           SongListView(),

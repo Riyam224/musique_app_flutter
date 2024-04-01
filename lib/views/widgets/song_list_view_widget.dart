@@ -10,6 +10,7 @@ class SongListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
+      flex: 1,
       child: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: ListView.builder(
@@ -19,57 +20,58 @@ class SongListView extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.only(bottom: 14),
               child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  height: 72,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Image.asset(
-                        info[index].songImage,
-                        width: 67,
-                        height: 72,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 150, top: 10),
-                        child: Column(
-                          children: [
-                            Text(
-                              info[index].songName,
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xffCBC8C8),
-                              ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                height: 72,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(
+                      info[index].songImage,
+                      width: 67,
+                      height: 72,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 150, top: 10),
+                      child: Column(
+                        children: [
+                          Text(
+                            info[index].songName,
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xffCBC8C8),
                             ),
-                            Row(
-                              children: [
-                                Text(info[index].albumYear,
-                                    style: TextStyle(
-                                      fontSize: 10,
-                                      color: Color(0xff847D7D),
-                                    )),
-                                Text(
-                                  '* Easy Living',
+                          ),
+                          Row(
+                            children: [
+                              Text(info[index].albumYear,
                                   style: TextStyle(
                                     fontSize: 10,
                                     color: Color(0xff847D7D),
-                                  ),
+                                  )),
+                              Text(
+                                '* Easy Living',
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color(0xff847D7D),
                                 ),
-                              ],
-                            ),
-                          ],
-                        ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
-                      // todo
-                      Icon(
-                        Icons.more_vert,
-                        size: 40,
-                        color: Color(0xffD9D9D9),
-                      ),
-                    ],
-                  )),
+                    ),
+                    // todo
+                    Icon(
+                      Icons.more_vert,
+                      size: 40,
+                      color: Color(0xffD9D9D9),
+                    ),
+                  ],
+                ),
+              ),
             );
           },
         ),

@@ -33,7 +33,7 @@ List<SongInfoModel> info = [
       songImage: 'assets/images/resize-1711997955598096443c.jpg',
       sound: 'sounds//ote2.wav'),
   SongInfoModel(
-      image: 'assets/images/Rectangle 39.png',
+      image: 'assets/images/pexels.jpg',
       albumName: 'Heartless ',
       albumYear: '2023',
       songName: 'kisarya',
@@ -54,7 +54,7 @@ List<SongInfoModel> info = [
       songImage: 'assets/images/resize-1711997955598096443c.jpg',
       sound: 'sounds//ote2.wav'),
   SongInfoModel(
-      image: 'assets/images/Rectangle 39.png',
+      image: 'assets/images/pexels.jpg',
       albumName: 'Heartless ',
       albumYear: '2023',
       songName: 'you are beautiful',
