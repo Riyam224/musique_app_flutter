@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:musiqa_app/models/album_model.dart';
+import 'package:musiqa_app/views/song_view.dart';
 
 class AlbumsListView extends StatelessWidget {
   const AlbumsListView({super.key});
@@ -20,11 +22,19 @@ class AlbumsListView extends StatelessWidget {
             child: Container(
               child: Column(
                 children: [
-                  Image.asset(
-                    // todo
-                    info[index].image,
-                    width: 130,
-                    height: 100,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return SongView();
+                      }));
+                    },
+                    child: Image.asset(
+                      // todo
+                      info[index].image,
+                      width: 130,
+                      height: 100,
+                    ),
                   ),
                   SizedBox(
                     height: 15,
