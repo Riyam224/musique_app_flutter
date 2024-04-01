@@ -1,0 +1,15 @@
+SongInfoModel(
+      image: 'assets/images/Rectangle 38.png',
+      albumName: 'kisararya ',
+      albumYear: '2023',
+      songName: 'We Are Chaos',
+      songImage:'assets/images/resize-17119986931119610838pexelsphoto1727280.jpg',
+      sound: 'sounds//ote2.wav'),
+  SongInfoModel(
+      image: 'assets/images/Rectangle 39.png',
+      albumName: 'Heartless ',
+      albumYear: '2023',
+      songName: 'thinking out load',
+      songImage:
+          'assets/images/resize-17119987981347537239pexelsmartinlopez2240771.jpg',
+      sound: 'sounds//ote3.wav'),
