@@ -26,7 +26,7 @@ class SongInfoModel {
 // todo list of the songinfo
 List<SongInfoModel> info = [
   SongInfoModel(
-      image: 'assets/images/Rectangle 38.png',
+      image: 'assets/images/song.jpg',
       albumName: 'Alone ',
       albumYear: '2023',
       songName: 'alone',

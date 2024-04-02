@@ -3,11 +3,29 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:musiqa_app/views/splash_view.dart';
 
-class SongView extends StatelessWidget {
+class SongView extends StatefulWidget {
   SongView({
     super.key,
   });
+
+  @override
+  State<SongView> createState() => _SongViewState();
+}
+
+class _SongViewState extends State<SongView> {
+  // todo
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 20), () {
+      Navigator.push(context, MaterialPageRoute(builder: (context) {
+        return SplashView();
+      }));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +37,7 @@ class SongView extends StatelessWidget {
             Container(
               width: double.infinity,
               height: 600,
-              child: Image.asset('assets/images/Rectangle 38.png',
-                  fit: BoxFit.cover),
+              child: Image.asset('assets/images/song.jpg', fit: BoxFit.cover),
             ),
             Positioned(
               bottom: 0,
